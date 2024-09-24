@@ -1,6 +1,5 @@
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-
+// import "bootswatch/dist/cosmo/bootstrap.min.css";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -30,7 +29,7 @@ export default function Contact() {
       <h2>Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <input
-          className="form-control m-1"
+          className="form-control m-2"
           type="text"
           name="name"
           placeholder="Your Name"
@@ -39,20 +38,20 @@ export default function Contact() {
         />
         <input
           // type="email"
-          className="form-control m-1"
+          className="form-control m-2"
           name="email"
           placeholder="Your Email"
           onChange={handleInputChange}
           value={formData.email}
         />
         <textarea
-          className="form-control m-1"
+          className="form-control m-2"
           name="message"
           placeholder="Your Message"
           onChange={handleInputChange}
           value={formData.message}
         />
-        <button className="btn btn-success" type="submit">
+        <button className="btn btn-primary m-1" type="submit">
           Send
         </button>
       </form>

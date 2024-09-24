@@ -46,9 +46,9 @@ export default function Portfolio() {
     },
   ];
   return (
-    <div>
+    <div className="container">
       <h1>My Projects</h1>
-      <div className="project-list">
+      <div className="row">
         {projects.map((project, index) => (
           <Project
             key={index}

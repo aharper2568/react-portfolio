@@ -47,7 +47,7 @@ export default function Portfolio() {
   ];
   return (
     <div className="container">
-      <h1>My Projects</h1>
+      <h2>My Projects</h2>
       <div className="row">
         {projects.map((project, index) => (
           <Project

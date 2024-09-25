@@ -5,11 +5,11 @@ const Project = ({ title, image, githubLink, liveLink }) => {
       <img src={image} className="w-100" alt={`${title} Screenshot`} />
       <div className="mt-auto">
         <p>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <a href={githubLink} className="link-offset-2 link-underline link-underline-opacity-0" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           {" | "}
-          <a href={liveLink} target="_blank" rel="noopener noreferrer">
+          <a href={liveLink} className="link-offset-2 link-underline link-underline-opacity-0" target="_blank" rel="noopener noreferrer">
             Live Demo
           </a>
         </p>

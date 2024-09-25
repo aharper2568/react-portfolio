@@ -22,6 +22,8 @@ export default function Contact() {
     } else {
       setErrorMessage("");
       console.log("Form submitted:", formData);
+      return document.getElementById("success").innerHTML = `Message Sent!`
+      
     }
   };
   return (
@@ -55,6 +57,7 @@ export default function Contact() {
           Send
         </button>
       </form>
+      <p className={errorMessage ? "" : "bg-success w-25"} id="success"></p>
       {errorMessage && <p className="bg-warning w-25">{errorMessage}</p>}
     </section>
   );

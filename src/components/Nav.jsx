@@ -5,7 +5,6 @@ function NavTabs() {
 
   return (
     <>
-    <h1>Anthony Harper</h1>
     <ul className="container-fluid nav nav-tabs justify-content-between">
       <li className="nav-item">
         <Link

@@ -55,7 +55,7 @@ export default function Contact() {
           Send
         </button>
       </form>
-      {errorMessage && <p>{errorMessage}</p>}
+      {errorMessage && <p className="bg-warning w-25">{errorMessage}</p>}
     </section>
   );
 }
